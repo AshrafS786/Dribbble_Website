@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    color: #0d0c22;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 30px;
+    font-weight: 300; */
+}
+#nav img{
+    height: 70px;
+}
+#nav h5{
+    margin-left: 26px;
+    font-size: 17px;
+    font-weight: 450;
+    color: #696969;
+}
+#nav-part2 button{
+    margin-left: 11px;
+    padding: 12px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 550;
+    cursor: pointer;
+    /* background-color: #414040; */
+    color: #2a2929;
+}
+
+#btn2{
+    color: #fff;
+    background-color: #f2327b;
+
+}
+#nav-part2 i{
+    font-size: 16px;
+
+}
+#center{
+    height:78%;
+    width: 100%;
+    background-color: darkblue;
+}
+#center video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+#overlay{
+    height: 75%;
+    width: 100%;
+    top: 80px;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: absolute;
+    padding: 40px;
+    
+}
+#info{
+    height: 78px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+}
+#info h5{
+    font-weight: 500;
+    padding: 16px 20px;
+    color: #fff;
+    border-radius: 28px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.5);
+    
+}
+#info h5:nth-child(1){
+    background-color: #fff;
+    color: #000;
+}
+#info h2{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 150%;
+    
+}
+/* #center:h2::selection{
+
+} */
+#info h5:hover{
+    background-color: white;
+    color: black;
+}
+#info p{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 250px;
+}
+*::selection{
+    background-color: #ea4c89;
+    color: #fff;
+}
+#overlay h2{
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+#center p{
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+
+}
+#overlay input{
+    width: 40%;
+    padding: 19px 20px;
+    margin-left: 30%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+
+}
+#info2{
+    font-family: "gilroy";
+    text-transform: capitalize;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 19px;
+    margin-top: -8%;
+}
+#info2 h4{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    transition: all ease 0.5s;
+
+}
+#info2 h5{
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    transition: all ease 0.5s;
+    
+}
+#bottom{
+    height: 100%;
+    width: 100%;
+}
+
+.elem{
+    height: 200px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: red;
+    overflow: hidden;
+    display: inline-block;
+    margin: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+.elem #cover{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    background: linear-gradient(transparent,black);
+    bottom: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: all ease 0.5s;
+    
+}
+#cover h6{
+    color: #fff;
+    font-size: 14px;
+}
+#cover i{
+    color: grey;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+.elem:hover #cover{
+    bottom: 0;
+    opacity: 1;
+}
